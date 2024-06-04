@@ -37,9 +37,6 @@ test.skip('Confirm dialog with OK and Cencel', async ({page})=>{ // test.skip to
 
     await page.locator("//button[normalize-space()='Confirm Box']").click();
     await expect(page.locator("//p[@id='demo']")).toHaveText("You pressed OK!");
-
-    
-    await page.waitForTimeout(5000)
 })
 
 test('Promtpt Dialog ', async ({page})=>{

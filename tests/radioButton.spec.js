@@ -14,6 +14,4 @@ test('Radio Button', async ({page})=>{
     await expect(await page.locator('#female').isChecked()).toBeFalsy()
 
     await page.close()
-
-
 })

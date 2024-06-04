@@ -1,8 +1,20 @@
-import{test, expect} from '@playwright/test';
+// import {test, expect} from '@playwright/test';
+const {test, expect, chromium} = require('@playwright/test');
 
-test('Practice', async ({page})=>{
-    await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+// grouping test
 
+test.describe("grouped test", async()=>{
 
-    await page.waitForTimeout(5000)
+    test("P1@fun", async ({page})=>{
+        console.log("inside test 1....");
+    })
+    
+    test("P2@fun", async ({page})=>{
+        console.log("inside test 2....");
+    })
+    
+    test("P3", async ({page})=>{
+        console.log("inside test 3....");
+    })
+
 })

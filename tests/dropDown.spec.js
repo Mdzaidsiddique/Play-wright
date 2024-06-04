@@ -5,11 +5,11 @@ test('Drop Down', async ({page})=>{
 
     // Multiuple ways to select option from dropdown
 
-    // await page.locator("#country").selectOption({label : 'India'}) // using lebel / Visible text
-    // await page.locator('#country').selectOption('Canada') // using Visible text
-    // await page.locator('#country').selectOption({value : 'usa'})
-    // await page.locator('#country').selectOption({index:1}) // not preferrable- devloper can change index
-    // await page.selectOption('#country', 'India'); // by using text
+    await page.locator("#country").selectOption({label : 'India'}) // using lebel / Visible text
+    await page.locator('#country').selectOption('Canada') // using Visible text
+    await page.locator('#country').selectOption({value : 'usa'})
+    await page.locator('#country').selectOption({index:1}) // not preferrable- devloper can change index
+    await page.selectOption('#country', 'India'); // by using text
 
     // select option from dropdown using loop :: help in auto suggested or Dynamic dropdown
     const optionsArr = await page.$$('#country option');
@@ -50,8 +50,6 @@ test('Drop Down', async ({page})=>{
         }
     }
     await expect(status).toBeTruthy();
-
-
 
     // await page.waitForTimeout(6000);
 })

@@ -15,6 +15,4 @@ test('Frames or i frames', async ({page})=>{
     // Approach 2: uaing frame locator
     const inputBox = await page.frameLocator("frame[src='frame_1.html']").locator("[name='mytext1']")
     await inputBox.fill('hello');
-
-    await page.waitForTimeout(5000)
 })
