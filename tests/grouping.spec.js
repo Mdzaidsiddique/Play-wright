@@ -29,34 +29,35 @@ test.describe("Group 1", ()=>{
     
 })
 
-test.describe("Group 2", ()=>{
-    test('Grouping test-3', async ({page})=>{
-        console.log("This is tesyt 3");
-    })
+// test.describe("Group 2", ()=>{
+//     test('Grouping test-3', async ({page})=>{
+//         console.log("This is tesyt 3");
+//     })
     
-    test('Grouping test-4', async ({page})=>{
-        console.log("This is tesyt 4");
-    })
-})
+//     test('Grouping test-4', async ({page})=>{
+//         console.log("This is tesyt 4");
+//     })
+// })
 
-//only(): only this group will executed
-test.describe.only("Group 3 (only)", ()=>{
-    test('Grouping test-5', async ({page})=>{
-        console.log("This is tesyt 5");
-    })
+// //only(): only this group will executed
+// // test.describe.only("Group 3 (only)", ()=>{
+// test.describe("Group 3 (only)", ()=>{
+//     test('Grouping test-5', async ({page})=>{
+//         console.log("This is tesyt 5");
+//     })
     
-    test('Grouping test-6', async ({page})=>{
-        console.log("This is tesyt 6");
-    })
-})
+//     test('Grouping test-6', async ({page})=>{
+//         console.log("This is tesyt 6");
+//     })
+// })
 
-//skip(): skip this group
-test.describe.skip("Group 4 (skip)", ()=>{
-    test('Grouping test-7', async ({page})=>{
-        console.log("This is tesyt 7");
-    })
+// //skip(): skip this group
+// test.describe.skip("Group 4 (skip)", ()=>{
+//     test('Grouping test-7', async ({page})=>{
+//         console.log("This is tesyt 7");
+//     })
     
-    test('Grouping test-8', async ({page})=>{
-        console.log("This is tesyt 8");
-    })
-})
+//     test('Grouping test-8', async ({page})=>{
+//         console.log("This is tesyt 8");
+//     })
+// })
