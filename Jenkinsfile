@@ -11,7 +11,8 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 script {
-                    def nodeJSHome = tool name: 'NodeJS', type: 'NodeJSInstallation'
+                    // Use the name you configured in Global Tool Configuration
+                    def nodeJSHome = tool name: 'NodeJS 22', type: 'NodeJSInstallation'
                     env.PATH = "${nodeJSHome}/bin:${env.PATH}"
                 }
                 bat 'npm install'
