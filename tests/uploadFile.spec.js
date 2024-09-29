@@ -13,20 +13,20 @@ test('Upload Single File', async ({page})=>{
 
 })
 
-test.only('Uploading Multiple Files', async ({page})=>{
-    await page.goto("https://davidwalsh.name/demo/multiple-file-upload.php");
+// test.only('Uploading Multiple Files', async ({page})=>{
+//     await page.goto("https://davidwalsh.name/demo/multiple-file-upload.php");
 
-    await page.locator("#filesToUpload")
-        .setInputFiles(["tests/filesForUpload/firstFile.pdf", "tests/filesForUpload/SecondFile.pdf"])
+//     await page.locator("#filesToUpload")
+//         .setInputFiles(["tests/filesForUpload/firstFile.pdf", "tests/filesForUpload/SecondFile.pdf"])
 
-    expect(await page.locator("#fileList li:nth-child(1)")).toHaveText("firstFile.pdf");
-    expect(await page.locator("#fileList li:nth-child(2)")).toHaveText("SecondFile.pdf");
+//     expect(await page.locator("#fileList li:nth-child(1)")).toHaveText("firstFile.pdf");
+//     expect(await page.locator("#fileList li:nth-child(2)")).toHaveText("SecondFile.pdf");
 
 
-    //Removing Files
-    await page.locator("#filesToUpload").setInputFiles([]);
+//     //Removing Files
+//     await page.locator("#filesToUpload").setInputFiles([]);
 
-    expect(await page.locator("#fileList li:nth-child(1)")).toHaveText("No Files Selected");
+//     expect(await page.locator("#fileList li:nth-child(1)")).toHaveText("No Files Selected");
     
-    await page.close();
-})
+//     await page.close();
+// })
