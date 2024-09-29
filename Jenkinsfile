@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script {
                     // Use the name you configured in Global Tool Configuration
-                    def nodeJSHome = tool name: 'NodeJS 22', type: 'NodeJSInstallation'
+                    def nodeJSHome = tool name: 'NodeJS 22', type: 'NodeJS installations'
                     env.PATH = "${nodeJSHome}/bin:${env.PATH}"
                 }
                 bat 'npm install'
