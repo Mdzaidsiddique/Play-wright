@@ -51,7 +51,7 @@ test.describe.only("Group 3 (only)", ()=>{
 })
 
 //skip(): skip this group
-test.describe.only("Group 4 (skip)", ()=>{
+test.describe.skip("Group 4 (skip)", ()=>{
     test('Grouping test-7', async ({page})=>{
         console.log("This is tesyt 7");
     })
