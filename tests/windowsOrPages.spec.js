@@ -22,7 +22,7 @@ test('Handle Pages/Windows', async ()=>{
     //can perform assertion on both pages
 })
 
-test.only("Mulitple pages/ windows", async ()=>{
+test("Mulitple pages/ windows", async ()=>{
     const browser = await chromium.launch();
     const context = await browser.newContext();
     const page1 = await context.newPage();
