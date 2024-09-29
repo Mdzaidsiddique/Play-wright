@@ -11,7 +11,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 script {
-                    def nodeJSHome = tool name: 'NodeJS 14', type: 'NodeJSInstallation'
+                    def nodeJSHome = tool name: 'NodeJS', type: 'NodeJSInstallation'
                     env.PATH = "${nodeJSHome}/bin:${env.PATH}"
                 }
                 bat 'npm install'
