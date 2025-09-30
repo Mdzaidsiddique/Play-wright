@@ -1,0 +1,25 @@
+// playwright development environment setup:
+
+-- ensure node.js installed (node -v & npm -v)
+-- initialize project (npm init -y : this will create package.json)
+-- npm install -D @playwright/test : install playwright
+-- npx playwright install : installl required browser
+
+npm vs npx:
+-- npm: node package manager (install, manage packages): installer
+-- npx: node package executor: runner
+
+Package Management Fundamentals:
+--  package.json: lists dependencies and project metadata.
+--  package-lock.json: locks exact versions.
+--  node_modules/: actual installed packages.
+--  -D (or --save-dev) → for dev dependencies (like test frameworks).
+--  npm install <pkg> → adds runtime dependency.
+--  npm uninstall <pkg> → removes package.
+--  npm run <script> → runs a script defined in package.json.
+
+- create .tests/example.spec.js :(write test script inside it)
+-- to execte: npx playwright test :(to run all tests)
+-- npx playwright test tests/example.spec.js :(to run specific file)
+-- npx playwright test -g "homepage has Playwright in title" :(to run specific test  inside a file)
+-- npx playwright show-report :(open test report after run)
