@@ -16,7 +16,7 @@ test.afterEach(async ()=>{
     console.log('this is afterEach hook................');
 })
 
-// /test.describe() : to group the tests
+// test.describe() : to group the tests
 test.describe("Group 1", ()=>{
 
     test('Grouping test-1', async ({page})=>{

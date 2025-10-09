@@ -1,13 +1,12 @@
 const{test, expect, chromium} = require('@playwright/test');
 
-//test.only() :: runs only this test, we can specify multiple testas only() :: all will run
+//test.only() :: runs only this test, we can specify multiple tests only() :: all will run
 // test.only("test1-only", async ({page})=>{
 //     console.log("sample test...test 1");
 // })
 
-//test.skip() :: skip this test, we can specify multiple testas skip() :: all will skip
+//test.skip() :: skip this test, we can specify multiple tests skip() :: all will skip
 test.skip("test2-skip", async ({page})=>{
-
     console.log("sample test...test 2");
 })
 
@@ -21,8 +20,8 @@ test("test3-skip", async ({page, browserName})=>{
 
 })
 
-/* Fixme: if the perticular test something to be fixed
-        : similer to skip // if we have some open bug in out test and we wanted to skip that test untill bugs are not resolve
+/* Fixme: if the perticular test has something to be fixed
+        : similer to skip // if we have some open bug in our test and we wanted to skip that test untill bugs are not resolve
         : then that will skip at runtime
 */
 test("test4-fixme", async ({page})=>{
@@ -33,13 +32,13 @@ test("test4-fixme", async ({page})=>{
 
 // fail
 test("test5-fail", async ({page})=>{
-    test.fail(); //expedting fail
+    test.fail(); //expecting fail
 
     console.log("sample test...test 5");
 
     expect(1).toBe(1); // actual pass
     // this test will fail (mismatch between expexted and actual)
-    // if both exp anf actual is fail then test will pass
+    // if both exp and actual is fail then test will pass
 })
 
 test("test6-fail", async ({page, browserName})=>{ 

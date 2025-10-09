@@ -10,7 +10,7 @@ test('handle inputbox', async ({page})=>{
     await expect(await page.locator('#name')).toBeEnabled() //enabled or not
 
     //now passing the data into input box
-    await page.locator("#name").fill("Zaid")
+    await page.locator("#name").toBeEmpty().fill("Zaid")
     //await page.fill('#name', 'Zaid')
 
 

@@ -1,5 +1,6 @@
 import {test, expect} from '@playwright/test';
 
+// reporter: ways to display or save the results of test run
 // config file reporter: 'line','html',etc
 
 test('Reporters', async ({page})=>{

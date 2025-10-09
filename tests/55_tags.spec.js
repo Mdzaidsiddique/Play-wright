@@ -26,5 +26,5 @@ test('test5@sanity@reg', async ({page})=>{
 // command to run tagged test
 // npx playwright test --grep "@tagName"
 
-// --grep "@sanity" --grep-invert "@reg" // execure only @sanity not @reg
-// --grep "@reg" --grep invert "@sanity" // execure only @reg not @sanity
+// --grep "@sanity" --grep-invert "@reg" // execute only @sanity not @reg
+// --grep "@reg" --grep-invert "@sanity" // execute only @reg not @sanity 

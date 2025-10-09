@@ -21,5 +21,5 @@ test('Full Page Screenshot', async ({page})=>{
 //     await page.locator("//div[@id='tbodyid']//div[1]//div[1]//a[1]//img[1]").screenshot({path:"tests/screenshots/"+Date.now()+"SamsungScreenshot.png"});
 // })
 
-// be Default if we want ot take screenshot of every test
+// by default if we want ot take screenshot of every test
 // then in playwright.config.js inside uses we have to configure screenshot:'on'

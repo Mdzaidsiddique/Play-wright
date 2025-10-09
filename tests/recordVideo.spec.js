@@ -20,8 +20,8 @@ test("Record video", async ({page})=>{
         expect(await dialog.message()).toContain("Product added.");
         await dialog.accept();
     })
-
     // logout
     await page.locator('#logout2').click()
     await page.waitForTimeout(5000);
-})
+}, {video : 'on'}); 
+// this {video : 'on'} we can skipp as well that will apply from config file
