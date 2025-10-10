@@ -1,17 +1,13 @@
 // in playwright page and windows are same
-
-const { test, expect, chromium} = require("@playwright/test");
+import { test, expect, chromium} from "@playwright/test";
 
 test('Handle Pages/Windows', async ()=>{
-
     const browser = await chromium.launch();
     const context = await browser.newContext();
-
     const page1 = await context.newPage();
     const page2 = await context.newPage();
-    
-    let totalPages = await context.pages(); // array of pages
 
+    let totalPages = await context.pages(); // array of pages
     console.log("total #of pages: ", totalPages.length);
 
     // two pages on same browser context
@@ -35,9 +31,7 @@ test("Mulitple pages/ windows", async ()=>{
     const newPage = await pagePromise;
 
     await expect(newPage).toHaveTitle("Sign Up | LinkedIn")
-    
     await page1.waitForTimeout(4000);
-
     await browser.close()
 })
 
