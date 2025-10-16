@@ -23,5 +23,4 @@ test("POM", async ({page})=>{
     // await page.waitForTimeout(3000)
     const status = await CartPageObject.checkProductInCart("Nexus 6");
     expect(await status).toBe(true)
-
 })

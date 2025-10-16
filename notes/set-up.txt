@@ -23,3 +23,10 @@ Package Management Fundamentals:
 -- npx playwright test tests/example.spec.js :(to run specific file)
 -- npx playwright test -g "homepage has Playwright in title" :(to run specific test  inside a file)
 -- npx playwright show-report :(open test report after run)
+
+why exp.spec.js? what is spec in this?
+-- Spec = Specification. (A test file is essentially a specification of how the software should behave)
+-- Example: In example.spec.js, you’re writing specs (tests) that describe what the app should do
+
+pw-architecture: https://samedesilva.medium.com/playwright-architecture-simple-breakdown-69f64ea4de3d
+

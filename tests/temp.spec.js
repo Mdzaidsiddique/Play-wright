@@ -18,3 +18,9 @@ test.describe("grouped test", async()=>{
     })
 
 })
+
+
+test(async ({page})=>{
+    // await page.pasue()
+    await page.setINput
+})
